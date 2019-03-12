@@ -1,0 +1,15 @@
+body {
+	font-family: sans-serif;
+	font-size: 20px;
+	margin: 75px;
+	color: #2e3440;
+	background-color: #eceff4;
+}
+
+footer {
+	font-size: 14px;
+}
+
+a {
+	color: #5e81ac;
+}

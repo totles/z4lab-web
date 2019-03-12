@@ -1,0 +1,29 @@
+body {
+    background-color: #8fbcbb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2e3440;
+    margin: 75px;
+}
+
+header {
+    font-size: 24px;    
+}
+
+.header-links {
+    font-size: 18px;
+}
+
+.servers {
+    margin-bottom: 50px;
+}
+
+a,
+a:focus,
+a:hover {
+    color: #5e81ac;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
