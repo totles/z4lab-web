@@ -33,7 +33,6 @@ function source_query($ip){
         $result.= substr($HL2_stats, $x, 1);    
     }
     
-    // ord ( string $string );
     $result = str_split($result);
     $info['network'] = ord($result[0]);$char = 1;
     while(ord($result[$char]) != "%00"){$info['name'] .= $result[$char];$char++;}$char++;
@@ -52,8 +51,6 @@ function source_query($ip){
     
     return $info;
 }
-// $ips = array('94.130.8.161:27015','94.130.8.161:27020','94.130.8.161:27025','94.130.8.161:27030');
-// $ips = array('94.130.8.161:27015','94.130.8.161:27025','94.130.8.161:27035','94.130.8.161:27030','94.130.8.161:27020');
 $ips = array('94.130.8.161:27030','94.130.8.161:27015','94.130.8.161:27025','94.130.8.161:27035','94.130.8.161:27040','94.130.8.161:27020');
 $alt = 0;
 foreach ($ips as &$ip) {
