@@ -55,10 +55,19 @@ $ips = array('94.130.8.161:27030','94.130.8.161:27015','94.130.8.161:27025','94.
 $alt = 0;
 foreach ($ips as &$ip) {
     $q = source_query($ip);
+    $wsmap = explode ("/", $q['map']);
+    if (count($wsmap) >= 3) {
+        $map = $wsmap[2];
+    } else {
+        $map = $q['map'];
+    }
+    # greatings from ace :)
+    # dont judge me ._.
     echo "<p class=\"lead\"><a href=\"steam://connect/".$ip."\"";
     echo ">".$q['name']."</a>";
     echo " - ".(intval($q['players']));
     echo "/".$q['max']."</p>";
-    echo "<p class=\"map\">current map: ".$q['map']."</p>";
+    echo "<p class=\"map\">current map: ".$map."</p>";
+    # echo "<p class=\"map\">current map: ".$q['map']."</p>";
 }
 ?>
